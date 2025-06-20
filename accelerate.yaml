@@ -1,0 +1,27 @@
+# accelerate_config.yaml
+
+# Môi trường tính toán: chạy trên máy này
+compute_environment: LOCAL_MACHINE
+
+# Loại huấn luyện phân tán: DEEPSPEED
+# Đây là tham số quan trọng nhất, báo cho accelerate dùng launcher của deepspeed
+distributed_type: DEEPSPEED
+
+# Đường dẫn đến file cấu hình chi tiết của DeepSpeed engine
+# Đây là cầu nối giữa accelerate và deepspeed
+deepspeed_config_file: "/home/tuyennt/working/Multi-GPU-Fine-Training-LLMs/ds_config_zero3.json"
+
+# Có sử dụng DeepSpeed không (để cho rõ ràng)
+use_deepspeed: true
+
+# Số tiến trình (tương đương số GPU) sẽ được khởi chạy
+num_processes: 2
+
+# Cấu hình mixed precision (phải nhất quán với ds_config.json và TrainingArguments)
+mixed_precision: 'fp16'
+
+# --- Các thông số cho môi trường multi-node, có thể để mặc định cho 1 máy ---
+machine_rank: 0
+main_process_ip: null
+main_process_port: null
+main_training_function: main
