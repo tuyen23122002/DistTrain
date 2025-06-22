@@ -2,8 +2,7 @@
     "train_batch_size": "auto",
     "train_micro_batch_size_per_gpu": "auto",
     "gradient_accumulation_steps": "auto",
-    "tensor_parallel_size": 2,
-    "pipeline_parallel_size": 2,
+    
     "zero_optimization": {
         "stage": 3,
         "offload_optimizer": {
@@ -20,7 +19,7 @@
         "reduce_bucket_size": "auto",
         "stage3_prefetch_bucket_size": "auto",
         "stage3_param_persistence_threshold": "auto",
-        "stage3_max_live_parameters": 1e9
+        "stage3_max_live_parameters": 1e7
         
     },
     "fp16": {

@@ -4,8 +4,10 @@ __pycache__/
 *$py.class
 
 # Bỏ qua các thư mục model đã fine-tune
-qwen2-7b-instruct-finetuned-alpaca/
-qwen2.5b-lora-alpaca/
+Fine-Tuning Qwen 2.5 with DeepSpeed Pipeline/qwen2-7b-pipeline-finetuned/
+Fine-Tuning Qwen 2.5 with DeepSpeed Pipeline/wandb/
+Fine-Tuning Qwen 2.5 with DeepSpeed_Zero3/checkpoint-809/
+Fine-Tuning Qwen 2.5 with DeepSpeed_Zero3/qwen2-7b-instruct-finetuned-alpaca/
 
 # C extensions
 *.so
