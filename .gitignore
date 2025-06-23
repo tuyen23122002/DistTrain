@@ -7,7 +7,7 @@ __pycache__/
 Fine-Tuning Qwen 2.5 with DeepSpeed Pipeline/qwen2-7b-pipeline-finetuned/
 Fine-Tuning Qwen 2.5 with DeepSpeed Pipeline/wandb/
 Fine-Tuning Qwen 2.5 with DeepSpeed_Zero3/checkpoint-809/
-Fine-Tuning Qwen 2.5 with DeepSpeed_Zero3/qwen2-7b-instruct-finetuned-alpaca/
+Fine-Tuning Qwen 2.5 with DeepSpeed_Zero3/qwen2.5b-full-finetune-vi-alpaca/
 
 # C extensions
 *.so
